@@ -39,9 +39,10 @@ function handleToDoSubmit(event){
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
 
+
 const savedToDos = localStorage.getItem(TODOS_KEY);
-console.log(savedToDos);
 if(savedToDos !== null){
     const parsedTodos = JSON.parse(savedToDos);
-    parsedTodos.forEach();
+    console.log(parsedTodos);
+    parsedTodos.forEach((item) => console.log("this is the turn of", item));
 }
