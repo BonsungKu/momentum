@@ -1,3 +1,62 @@
 .hidden {
   display: none;
 }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+img {
+  display: flex;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+.big-container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+}
+
+h2 {
+  font-size: 700%;
+  color: white;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 250%;
+  color: white;
+  margin-bottom: 10%;
+}
+
+#todo-form input {
+  border-radius: 10px;
+  background-color: rgba(0 , 0, 0, 0.3);
+  color: white;
+}
+
+#quote {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  color: gray;
+  top: 90%;
+}
+
+#weather {
+  position: fixed;
+  top: 3%;
+  right: 3%;
+  display: flex;
+  color:white;
+}
